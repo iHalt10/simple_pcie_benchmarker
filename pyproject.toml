@@ -1,0 +1,26 @@
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+cocotb = "^1.9.1"
+cocotb-bus = "^0.2.1"
+
+[tool.poetry.group.dev.dependencies]
+pyright = "^1.1.383"
+flake8 = "^7.1.1"
+isort = "^5.13.2"
+black = "^24.10.0"
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+line_length= 120
+force_single_line = true
+
+[tool.pyright]
+typeCheckingMode = "strict"
+venvPath = "."
+venv = ".venv"
